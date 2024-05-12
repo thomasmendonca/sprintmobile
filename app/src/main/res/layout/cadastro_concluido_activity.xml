@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="266dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="99dp"
+        android:backgroundTint="#EA1922"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPassword" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textViewSuccessMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
         android:text="Cadastro realizado com sucesso!"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="266dp" />
 
-    <Button
-        android:id="@+id/buttonContinue"
-        android:layout_width="123dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="256dp"
-        android:text="Continuar"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textViewSuccessMessage"
+        android:layout_width="337dp"
+        android:layout_height="115dp"
+        android:text="Agora você pode desfrutar de todos os recursos e benefícios disponíveis em nossa plataforma. Explore, conecte-se e aproveite ao máximo sua experiência conosco!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#7A7A7A"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="314dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

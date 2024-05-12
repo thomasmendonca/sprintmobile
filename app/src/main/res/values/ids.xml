@@ -6,5 +6,5 @@
     <item name="editTextLastName" type="id" />
     <item name="textViewConfirmPassword" type="id" />
     <item name="editTextConfirmPassword" type="id" />
-    <item name="buttonRegister" type="id" />
+    <item name="buttonContinue" type="id" />
 </resources>
